@@ -54,11 +54,20 @@ public enum ExpressCompanyType implements BaseType {
         this.desc = desc;
     }
 
+    @Override
     public int getCode() {
         return this.code;
     }
 
+    @Override
     public String getDesc() {
         return this.desc;
     }
+
+
+    public static ExpressCompanyType toType(int code) {
+        ExpressCompanyType [] values = ExpressCompanyType.values();
+        return values[code];
+    }
+
 }

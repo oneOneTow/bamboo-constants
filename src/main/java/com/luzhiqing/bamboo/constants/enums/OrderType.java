@@ -28,4 +28,10 @@ public enum OrderType implements BaseType {
     public String getDesc() {
         return this.desc;
     }
+
+
+    public static OrderType toType(int code) {
+        OrderType [] values = OrderType.values();
+        return values[code];
+    }
 }
