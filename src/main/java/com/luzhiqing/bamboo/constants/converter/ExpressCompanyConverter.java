@@ -5,12 +5,12 @@ import org.jooq.impl.AbstractConverter;
 
 import java.util.Objects;
 
-public class ExpressCompayConverter extends AbstractConverter<Integer, ExpressCompanyType> {
-    public ExpressCompayConverter() {
+public class ExpressCompanyConverter extends AbstractConverter<Integer, ExpressCompanyType> {
+    public ExpressCompanyConverter() {
         super(Integer.class, ExpressCompanyType.class);
     }
 
-    public ExpressCompayConverter(Class<Integer> fromType, Class<ExpressCompanyType> toType) {
+    public ExpressCompanyConverter(Class<Integer> fromType, Class<ExpressCompanyType> toType) {
         super(fromType, toType);
     }
 

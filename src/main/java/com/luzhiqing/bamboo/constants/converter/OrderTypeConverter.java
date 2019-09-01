@@ -1,6 +1,5 @@
 package com.luzhiqing.bamboo.constants.converter;
 
-import com.luzhiqing.bamboo.constants.enums.ExpressCompanyType;
 import com.luzhiqing.bamboo.constants.enums.OrderType;
 import org.jooq.impl.AbstractConverter;
 
