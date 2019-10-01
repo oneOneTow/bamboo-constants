@@ -5,6 +5,10 @@ import com.luzhiqing.bamboo.constants.BaseType;
 
 public enum ExpressCompanyType implements BaseType {
     /**
+     * 未知
+     */
+    UNKNOWN(0,"UNKNOWN"),
+    /**
      * 顺丰
      */
     SHUN_FENG(1,"SHUN_FENG"),
@@ -39,11 +43,8 @@ public enum ExpressCompanyType implements BaseType {
     /**
      * 邮政
      */
-    EMS(9,"EMS"),
-    /**
-     * 未知
-     */
-    UNKNOWN(0,"UNKNOWN")
+    EMS(9,"EMS")
+
     ;
 
     private int code;
