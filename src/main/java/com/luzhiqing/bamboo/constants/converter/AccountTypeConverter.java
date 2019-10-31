@@ -12,19 +12,18 @@ import java.util.Objects;
  * @CreateDate: 2019/10/1 19:04
  */
 public class AccountTypeConverter extends AbstractConverter<Integer, AccountType> {
-    public AccountTypeConverter(){
-        super(Integer.class,AccountType.class);
+    public AccountTypeConverter() {
+        super(Integer.class, AccountType.class);
     }
+
     public AccountTypeConverter(Class<Integer> fromType, Class<AccountType> toType) {
         super(fromType, toType);
     }
 
     @Override
     public AccountType from(Integer code) {
-        if(null == code){
-            throw  new RuntimeException("枚举数据库为null");
-        }
-        return AccountType.toType(code);
+
+        return Objects.isNull(code) ? null : AccountType.toType(code);
     }
 
     @Override
